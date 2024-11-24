@@ -21,9 +21,15 @@ const Content = () => {
   if (loading) return <p>Loading...</p>;
   if (errors) return <p>Error loading content!</p>;
 
+  const sortedData = data?.slice().sort((a: type, b: type) => {
+    const dateA = new Date(a.createdAt || "").getTime();
+    const dateB = new Date(b.createdAt || "").getTime();
+    return dateB - dateA;
+  });
+
   return (
     <div className={styles.wrapper}>
-      {data?.map((item: type) => (
+      {sortedData?.map((item: type) => (
         <div className={styles.container} key={item.id}>
           <h2 className={styles.title}>{item.title}</h2>
           <p className={styles.content}>{item.content}</p>
