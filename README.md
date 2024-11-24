@@ -8,7 +8,6 @@
 
 - Anonymous secret sharing
 - Filter secrets by category
-- Responsive design with SCSS
 - Powered by Strapi CMS
 
 ---
