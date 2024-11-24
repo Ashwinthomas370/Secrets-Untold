@@ -1,0 +1,17 @@
+.categoryWrapper {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  font-size: 25px;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.categoryList {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.categoryList:hover {
+  border-bottom: 1px solid #ff4191;
+}

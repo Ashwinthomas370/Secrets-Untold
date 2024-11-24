@@ -19,6 +19,11 @@
   }
 }
 
+.closeBtn {
+  color: #ff4757;
+  font-size: 25px;
+}
+
 .title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -57,4 +62,9 @@
     color: #ff4757;
     cursor: pointer;
   }
+}
+
+.categoryAction {
+  display: flex;
+  justify-content: space-evenly;
 }
